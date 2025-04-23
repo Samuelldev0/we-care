@@ -18,6 +18,12 @@
     color: #989D9C;
 }
 
+.navbar a:hover{
+    color: #000000b4;
+    font-weight: 700;
+    transition: 250ms linear;
+}
+
 .btn-login{
     width: 130px;
     height: 41px;
@@ -29,13 +35,15 @@
     border: none;
     position: relative;
     top: -6px;
+    cursor: pointer;
 }
 
 main{
     display: flex;
     gap: 86px;
     align-items: center;
-    margin-top: 143px;
+    justify-content: center;
+    margin-top: 143px;  
 }
 
 .box-img img{
@@ -70,5 +78,40 @@ p{
     font-size: 28px;
     font-weight: 700;
     border: none;
+    margin-top: 80px;
+    cursor: pointer;
 }
+
+
+/*responsividade*/
+
+@media screen and (max-width:1161px){
+    header{
+        display: none;
+    }
+
+    p{
+        display: none;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-img img{
+        width: 354px;
+        height: 317px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+}
+    
 
